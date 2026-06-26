@@ -23,37 +23,37 @@ export default function Home() {
   return (
     <main className="bg-[#030303] min-h-screen text-white relative overflow-hidden">
       {/* Global Background Parallax Elements - Very Subtle */}
-      <motion.div 
+      <motion.div
         style={{ y: y1 }}
-        className="fixed top-[15%] left-[-10%] w-[35vw] h-[35vw] bg-indigo-600/[0.03] rounded-full blur-[120px] pointer-events-none z-0" 
+        className="fixed top-[15%] left-[-10%] w-[35vw] h-[35vw] bg-indigo-600/[0.03] rounded-full blur-[120px] pointer-events-none z-0"
       />
-      <motion.div 
+      <motion.div
         style={{ y: y2 }}
-        className="fixed bottom-[15%] right-[-10%] w-[35vw] h-[35vw] bg-violet-600/[0.03] rounded-full blur-[120px] pointer-events-none z-0" 
+        className="fixed bottom-[15%] right-[-10%] w-[35vw] h-[35vw] bg-violet-600/[0.03] rounded-full blur-[120px] pointer-events-none z-0"
       />
 
       <Navbar />
-      
+
       <div className="relative z-10">
         <Hero />
-        
+
         <ParallaxText baseVelocity={-2.5} className="py-20 opacity-[0.15]">
           DEVELOPER DESIGNER INNOVATOR
         </ParallaxText>
 
         <Skills />
-        
+
         <ParallaxText baseVelocity={2.5} className="py-20 opacity-[0.15]">
           REACT NEXT.JS TYPESCRIPT TAILWIND
         </ParallaxText>
 
         <Experience />
-        
+
         <Projects />
-        
+
         <Contact />
       </div>
-      
+
       {/* Footer */}
       <footer className="py-12 border-t border-white/5 text-center relative z-10">
         <div className="max-w-7xl mx-auto px-6">

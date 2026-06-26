@@ -29,7 +29,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <motion.h2
@@ -64,10 +64,10 @@ export default function Contact() {
                 <p className="text-gray-400">naveenkumarr7722@gmail.com</p>
               </div>
             </div>
-            
-            <a 
-              href="https://wa.me/919361429669" 
-              target="_blank" 
+
+            <a
+              href="https://wa.me/919361429669"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-green-500/50 transition-colors group"
             >
@@ -112,36 +112,36 @@ export default function Contact() {
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-300">Name</label>
-                <input 
+                <input
                   name="name"
-                  type="text" 
+                  type="text"
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-indigo-500 transition-colors" 
-                  placeholder="Your Name" 
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-indigo-500 transition-colors"
+                  placeholder="Your Name"
                 />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-300">Email</label>
-                <input 
+                <input
                   name="email"
-                  type="email" 
+                  type="email"
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-indigo-500 transition-colors" 
-                  placeholder="your@email.com" 
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-indigo-500 transition-colors"
+                  placeholder="your@email.com"
                 />
               </div>
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-gray-300">Message</label>
-              <textarea 
+              <textarea
                 name="message"
                 required
-                rows={5} 
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-indigo-500 transition-colors resize-none" 
-                placeholder="Tell me about your project..." 
+                rows={5}
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-indigo-500 transition-colors resize-none"
+                placeholder="Tell me about your project..."
               />
             </div>
-            <button 
+            <button
               type="submit"
               disabled={isPending}
               className="w-full py-4 bg-white text-black font-bold rounded-xl hover:bg-indigo-500 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 group"

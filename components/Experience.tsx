@@ -38,9 +38,9 @@ export default function Experience() {
   return (
     <section id="experience" className="py-24 bg-black/50 relative overflow-hidden">
       {/* Decorative Parallax Background */}
-      <motion.div 
+      <motion.div
         style={{ y: useTransform(scrollYProgress, [0, 1], [0, -200]) }}
-        className="absolute top-0 left-0 w-full h-full bg-indigo-500/5 blur-[150px] pointer-events-none" 
+        className="absolute top-0 left-0 w-full h-full bg-indigo-500/5 blur-[150px] pointer-events-none"
       />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -66,11 +66,11 @@ export default function Experience() {
 
         <div ref={containerRef} className="max-w-4xl mx-auto relative">
           {/* Animated Timeline Line */}
-          <motion.div 
+          <motion.div
             style={{ scaleY, originY: 0 }}
-            className="absolute left-0 top-0 w-[2px] h-full bg-gradient-to-b from-indigo-500 via-violet-500 to-transparent" 
+            className="absolute left-0 top-0 w-[2px] h-full bg-gradient-to-b from-indigo-500 via-violet-500 to-transparent"
           />
-          
+
           {experiences.map((exp, idx) => (
             <motion.div
               key={idx}
@@ -84,8 +84,8 @@ export default function Experience() {
               <div className="absolute left-[-5px] top-0 w-3 h-3 bg-indigo-600 rounded-full shadow-[0_0_15px_rgba(79,70,229,0.5)]">
                 <div className="absolute inset-0 bg-indigo-500 rounded-full animate-ping opacity-75" />
               </div>
-              
-              <motion.div 
+
+              <motion.div
                 whileHover={{ x: 10 }}
                 transition={{ type: "spring", stiffness: 300 }}
                 className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-indigo-500/30 transition-all shadow-lg hover:shadow-indigo-500/5 backdrop-blur-sm"

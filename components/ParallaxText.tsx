@@ -68,8 +68,8 @@ export default function ParallaxText({ children, baseVelocity = 100, className =
    */
   return (
     <div className={`parallax overflow-hidden whitespace-nowrap flex flex-nowrap ${className}`}>
-      <motion.div 
-        className="flex whitespace-nowrap flex-nowrap text-8xl md:text-[10rem] font-black uppercase tracking-tighter text-white select-none" 
+      <motion.div
+        className="flex whitespace-nowrap flex-nowrap text-8xl md:text-[10rem] font-black uppercase tracking-tighter text-white select-none"
         style={{ x }}
       >
         <span className="block mr-12">{children} </span>

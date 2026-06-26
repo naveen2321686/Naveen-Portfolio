@@ -42,13 +42,13 @@ export default function Skills() {
   return (
     <section id="skills" ref={sectionRef} className="py-24 bg-black/50 relative overflow-hidden">
       {/* Parallax Background Elements */}
-      <motion.div 
+      <motion.div
         style={{ y: y1, opacity }}
-        className="absolute top-20 right-[10%] w-64 h-64 bg-indigo-500/5 rounded-full blur-[100px]" 
+        className="absolute top-20 right-[10%] w-64 h-64 bg-indigo-500/5 rounded-full blur-[100px]"
       />
-      <motion.div 
+      <motion.div
         style={{ y: y2, opacity }}
-        className="absolute bottom-20 left-[10%] w-64 h-64 bg-violet-500/5 rounded-full blur-[100px]" 
+        className="absolute bottom-20 left-[10%] w-64 h-64 bg-violet-500/5 rounded-full blur-[100px]"
       />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -79,7 +79,7 @@ export default function Skills() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ 
+              transition={{
                 delay: idx * 0.1,
                 duration: 0.5,
                 ease: "easeOut"

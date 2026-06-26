@@ -15,7 +15,7 @@ export default function Hero() {
   // Parallax transformations for background elements (more subtle)
   const bgX = useTransform(smoothMouseX, [0, 1000], [10, -10]);
   const bgY = useTransform(smoothMouseY, [0, 1000], [10, -10]);
-  
+
   // Parallax transformations for the code card (reduced intensity for professional look)
   const cardRotateX = useTransform(smoothMouseY, [0, 1000], [3, -3]);
   const cardRotateY = useTransform(smoothMouseX, [0, 1000], [-3, 3]);
@@ -35,13 +35,13 @@ export default function Hero() {
   return (
     <section id="about" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[#030303]">
       {/* Background Orbs with Parallax */}
-      <motion.div 
+      <motion.div
         style={{ x: bgX, y: bgY }}
-        className="absolute top-1/4 -left-20 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" 
+        className="absolute top-1/4 -left-20 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"
       />
-      <motion.div 
+      <motion.div
         style={{ x: useTransform(smoothMouseX, [0, 1000], [-30, 30]), y: useTransform(smoothMouseY, [0, 1000], [-30, 30]) }}
-        className="absolute bottom-1/4 -right-20 w-96 h-96 bg-violet-600/10 rounded-full blur-[120px] pointer-events-none" 
+        className="absolute bottom-1/4 -right-20 w-96 h-96 bg-violet-600/10 rounded-full blur-[120px] pointer-events-none"
       />
 
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
@@ -114,7 +114,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: 'easeOut' }}
           className="relative hidden md:block perspective-1000"
-          style={{ 
+          style={{
             rotateX: cardRotateX,
             rotateY: cardRotateY,
             x: cardX,
@@ -152,30 +152,30 @@ export default function Hero() {
               </div>
               <div><span className="text-gray-400">{'}'}</span></div>
             </div>
-            
+
             {/* Animated circles with parallax offset */}
-            <motion.div 
+            <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
               className="absolute -top-20 -right-20 w-64 h-64 border border-indigo-500/20 rounded-full"
             />
-            <motion.div 
+            <motion.div
               animate={{ rotate: -360 }}
               transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
               className="absolute -bottom-20 -left-20 w-64 h-64 border border-violet-500/20 rounded-full"
             />
           </div>
-          
+
           {/* Decorative floating elements */}
-          <motion.div 
-            style={{ 
+          <motion.div
+            style={{
               x: useTransform(smoothMouseX, [0, 1000], [20, -20]),
               y: useTransform(smoothMouseY, [0, 1000], [20, -20])
             }}
             className="absolute -top-6 -left-6 w-12 h-12 bg-indigo-500 rounded-xl blur-2xl opacity-50"
           />
-          <motion.div 
-            style={{ 
+          <motion.div
+            style={{
               x: useTransform(smoothMouseX, [0, 1000], [-40, 40]),
               y: useTransform(smoothMouseY, [0, 1000], [-40, 40])
             }}
