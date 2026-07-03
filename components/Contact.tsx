@@ -55,15 +55,18 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             className="space-y-6"
           >
-            <div className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-indigo-500/50 transition-colors">
+            <a
+              href="mailto:naveenkumarr7722@gmail.com"
+              className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-indigo-500/50 transition-colors group cursor-pointer"
+            >
               <div className="w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center shrink-0">
                 <Mail className="text-indigo-400" size={28} />
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-1">Email Me</h4>
-                <p className="text-gray-400">naveenkumarr7722@gmail.com</p>
+                <p className="text-gray-400 group-hover:text-indigo-400 transition-colors">naveenkumarr7722@gmail.com</p>
               </div>
-            </div>
+            </a>
 
             <a
               href="https://wa.me/919361429669"
@@ -80,15 +83,20 @@ export default function Contact() {
               </div>
             </a>
 
-            <div className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10">
+            <a
+              href="https://www.linkedin.com/in/naveenkumar7722"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-violet-500/50 transition-colors group cursor-pointer"
+            >
               <div className="w-14 h-14 bg-violet-500/10 rounded-2xl flex items-center justify-center shrink-0">
                 <MessageSquare className="text-violet-400" size={28} />
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-1">Let's Chat</h4>
-                <p className="text-gray-400">LinkedIn: Naveen Kumar K</p>
+                <p className="text-gray-400 group-hover:text-violet-400 transition-colors">LinkedIn: Naveen Kumar K</p>
               </div>
-            </div>
+            </a>
 
             <div className="p-8 rounded-3xl bg-gradient-to-br from-indigo-600 to-violet-600 text-white">
               <h4 className="text-2xl font-bold mb-4">Why hire me?</h4>
