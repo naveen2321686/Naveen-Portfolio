@@ -25,11 +25,11 @@ export default function Home() {
       {/* Global Background Parallax Elements - Very Subtle */}
       <motion.div
         style={{ y: y1 }}
-        className="fixed top-[15%] left-[-10%] w-[35vw] h-[35vw] bg-indigo-600/[0.03] rounded-full blur-[120px] pointer-events-none z-0"
+        className="fixed top-[15%] left-[-10%] w-[35vw] h-[35vw] bg-cyan-600/[0.04] rounded-full blur-[140px] pointer-events-none z-0"
       />
       <motion.div
         style={{ y: y2 }}
-        className="fixed bottom-[15%] right-[-10%] w-[35vw] h-[35vw] bg-violet-600/[0.03] rounded-full blur-[120px] pointer-events-none z-0"
+        className="fixed bottom-[15%] right-[-10%] w-[35vw] h-[35vw] bg-blue-600/[0.04] rounded-full blur-[140px] pointer-events-none z-0"
       />
 
       <Navbar />

@@ -35,7 +35,7 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-bold tracking-tight text-white"
         >
-          Naveen Kumar<span className="text-indigo-500">.</span>
+          Naveen Kumar<span className="text-cyan-400">.</span>
         </motion.div>
 
         {/* Desktop Links */}
@@ -47,7 +47,7 @@ export default function Navbar() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              className="text-sm font-medium text-gray-300 hover:text-cyan-400 transition-colors"
             >
               {link.name}
             </motion.a>
@@ -56,7 +56,7 @@ export default function Navbar() {
             href="#contact"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-full transition-all"
+            className="px-5 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white text-sm font-semibold rounded-full transition-all shadow-md shadow-cyan-500/20"
           >
             Hire Me
           </motion.a>

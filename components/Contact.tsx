@@ -28,7 +28,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -57,14 +57,14 @@ export default function Contact() {
           >
             <a
               href="mailto:naveenkumarr7722@gmail.com"
-              className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-indigo-500/50 transition-colors group cursor-pointer"
+              className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-cyan-500/50 transition-colors group cursor-pointer"
             >
-              <div className="w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center shrink-0">
-                <Mail className="text-indigo-400" size={28} />
+              <div className="w-14 h-14 bg-cyan-500/10 rounded-2xl flex items-center justify-center shrink-0">
+                <Mail className="text-cyan-400" size={28} />
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-1">Email Me</h4>
-                <p className="text-gray-400 group-hover:text-indigo-400 transition-colors">naveenkumarr7722@gmail.com</p>
+                <p className="text-gray-400 group-hover:text-cyan-400 transition-colors">naveenkumarr7722@gmail.com</p>
               </div>
             </a>
 
@@ -72,14 +72,14 @@ export default function Contact() {
               href="https://wa.me/919361429669"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-green-500/50 transition-colors group"
+              className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-emerald-500/50 transition-colors group"
             >
-              <div className="w-14 h-14 bg-green-500/10 rounded-2xl flex items-center justify-center shrink-0">
-                <Phone className="text-green-400" size={28} />
+              <div className="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center shrink-0">
+                <Phone className="text-emerald-400" size={28} />
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-1">WhatsApp Me</h4>
-                <p className="text-gray-400 group-hover:text-green-400 transition-colors">+91 9361429669</p>
+                <p className="text-gray-400 group-hover:text-emerald-400 transition-colors">+91 9361429669</p>
               </div>
             </a>
 
@@ -87,23 +87,23 @@ export default function Contact() {
               href="https://www.linkedin.com/in/naveenkumar7722"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-violet-500/50 transition-colors group cursor-pointer"
+              className="flex gap-6 p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition-colors group cursor-pointer"
             >
-              <div className="w-14 h-14 bg-violet-500/10 rounded-2xl flex items-center justify-center shrink-0">
-                <MessageSquare className="text-violet-400" size={28} />
+              <div className="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center shrink-0">
+                <MessageSquare className="text-blue-400" size={28} />
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-1">Let's Chat</h4>
-                <p className="text-gray-400 group-hover:text-violet-400 transition-colors">LinkedIn: Naveen Kumar K</p>
+                <p className="text-gray-400 group-hover:text-blue-400 transition-colors">LinkedIn: Naveen Kumar K</p>
               </div>
             </a>
 
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-indigo-600 to-violet-600 text-white">
+            <div className="p-8 rounded-3xl bg-gradient-to-br from-cyan-600 via-sky-600 to-blue-700 text-white shadow-xl shadow-cyan-500/10">
               <h4 className="text-2xl font-bold mb-4">Why hire me?</h4>
-              <p className="text-indigo-100/80 mb-6 leading-relaxed">
+              <p className="text-cyan-50/90 mb-6 leading-relaxed">
                 I combine technical proficiency with a keen eye for design, ensuring that every pixel serves a purpose and every interaction feels intuitive.
               </p>
-              <ul className="space-y-3 text-sm">
+              <ul className="space-y-3 text-sm font-medium">
                 <li className="flex items-center gap-2">✓ Clean & Maintainable Code</li>
                 <li className="flex items-center gap-2">✓ Performance-focused Frontend</li>
                 <li className="flex items-center gap-2">✓ Modern Aesthetic Sense</li>
@@ -124,7 +124,7 @@ export default function Contact() {
                   name="name"
                   type="text"
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-indigo-500 transition-colors"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-cyan-500 transition-colors"
                   placeholder="Your Name"
                 />
               </div>
@@ -134,7 +134,7 @@ export default function Contact() {
                   name="email"
                   type="email"
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-indigo-500 transition-colors"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-cyan-500 transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
@@ -145,14 +145,14 @@ export default function Contact() {
                 name="message"
                 required
                 rows={5}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-indigo-500 transition-colors resize-none"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-cyan-500 transition-colors resize-none"
                 placeholder="Tell me about your project..."
               />
             </div>
             <button
               type="submit"
               disabled={isPending}
-              className="w-full py-4 bg-white text-black font-bold rounded-xl hover:bg-indigo-500 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 group"
+              className="w-full py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-xl disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 group shadow-lg shadow-cyan-500/20"
             >
               {isPending ? (
                 <>

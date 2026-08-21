@@ -37,11 +37,11 @@ export default function Hero() {
       {/* Background Orbs with Parallax */}
       <motion.div
         style={{ x: bgX, y: bgY }}
-        className="absolute top-1/4 -left-20 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"
+        className="absolute top-1/4 -left-20 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none"
       />
       <motion.div
         style={{ x: useTransform(smoothMouseX, [0, 1000], [-30, 30]), y: useTransform(smoothMouseY, [0, 1000], [-30, 30]) }}
-        className="absolute bottom-1/4 -right-20 w-96 h-96 bg-violet-600/10 rounded-full blur-[120px] pointer-events-none"
+        className="absolute bottom-1/4 -right-20 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"
       />
 
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
@@ -54,13 +54,13 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="inline-block px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-semibold mb-6"
+            className="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-semibold mb-6"
           >
             Available for opportunities
           </motion.span>
           <h1 className="text-5xl md:text-8xl font-bold text-white mb-8 leading-[1.1] tracking-tight">
             I'm Naveen Kumar <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500">
               Frontend Developer
             </span>
           </h1>
@@ -73,7 +73,7 @@ export default function Hero() {
               href="#projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-2xl transition-all shadow-lg shadow-indigo-500/25"
+              className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-2xl transition-all shadow-lg shadow-cyan-500/20"
             >
               View Projects <ArrowRight size={20} />
             </motion.a>
@@ -101,7 +101,7 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 + i * 0.1 }}
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 <social.icon size={24} />
               </motion.a>
@@ -121,33 +121,33 @@ export default function Hero() {
             y: cardY
           }}
         >
-          <div className="relative z-10 w-full aspect-square bg-gradient-to-br from-indigo-500/10 to-violet-500/10 rounded-3xl border border-white/10 backdrop-blur-3xl overflow-hidden shadow-2xl">
+          <div className="relative z-10 w-full aspect-square bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-transparent rounded-3xl border border-cyan-500/20 backdrop-blur-3xl overflow-hidden shadow-2xl shadow-cyan-500/5">
             {/* Visual representation - code snippets or abstract design */}
             <div className="absolute inset-0 p-8 flex flex-col justify-center gap-4 font-mono text-sm">
               <div className="flex gap-2">
-                <span className="text-violet-400">const</span>
-                <span className="text-indigo-300">developer</span>
+                <span className="text-cyan-400">const</span>
+                <span className="text-sky-300">developer</span>
                 <span className="text-gray-500">=</span>
                 <span className="text-gray-400">{'{'}</span>
               </div>
               <div className="pl-6 flex gap-2">
-                <span className="text-indigo-300">name:</span>
+                <span className="text-sky-300">name:</span>
                 <span className="text-emerald-400">'Naveen Kumar'</span>,
               </div>
               <div className="pl-6 flex gap-2">
-                <span className="text-indigo-300">role:</span>
+                <span className="text-sky-300">role:</span>
                 <span className="text-emerald-400">'Frontend Developer'</span>,
               </div>
               <div className="pl-6 flex gap-2">
-                <span className="text-indigo-300">experience:</span>
+                <span className="text-sky-300">experience:</span>
                 <span className="text-amber-400">1</span>,
               </div>
               <div className="pl-6 flex gap-2">
-                <span className="text-indigo-300">passion:</span>
+                <span className="text-sky-300">passion:</span>
                 <span className="text-emerald-400">'Building scalable UI'</span>,
               </div>
               <div className="pl-6 flex gap-2">
-                <span className="text-indigo-300">tech:</span>
+                <span className="text-sky-300">tech:</span>
                 <span className="text-gray-400">['React', 'Next.js', 'TS']</span>
               </div>
               <div><span className="text-gray-400">{'}'}</span></div>
@@ -157,12 +157,12 @@ export default function Hero() {
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-              className="absolute -top-20 -right-20 w-64 h-64 border border-indigo-500/20 rounded-full"
+              className="absolute -top-20 -right-20 w-64 h-64 border border-cyan-500/20 rounded-full"
             />
             <motion.div
               animate={{ rotate: -360 }}
               transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-              className="absolute -bottom-20 -left-20 w-64 h-64 border border-violet-500/20 rounded-full"
+              className="absolute -bottom-20 -left-20 w-64 h-64 border border-blue-500/20 rounded-full"
             />
           </div>
 
@@ -172,14 +172,14 @@ export default function Hero() {
               x: useTransform(smoothMouseX, [0, 1000], [20, -20]),
               y: useTransform(smoothMouseY, [0, 1000], [20, -20])
             }}
-            className="absolute -top-6 -left-6 w-12 h-12 bg-indigo-500 rounded-xl blur-2xl opacity-50"
+            className="absolute -top-6 -left-6 w-12 h-12 bg-cyan-500 rounded-xl blur-2xl opacity-40"
           />
           <motion.div
             style={{
               x: useTransform(smoothMouseX, [0, 1000], [-40, 40]),
               y: useTransform(smoothMouseY, [0, 1000], [-40, 40])
             }}
-            className="absolute -bottom-6 -right-6 w-12 h-12 bg-violet-500 rounded-xl blur-2xl opacity-50"
+            className="absolute -bottom-6 -right-6 w-12 h-12 bg-blue-500 rounded-xl blur-2xl opacity-40"
           />
         </motion.div>
       </div>

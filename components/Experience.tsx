@@ -40,7 +40,7 @@ export default function Experience() {
       {/* Decorative Parallax Background */}
       <motion.div
         style={{ y: useTransform(scrollYProgress, [0, 1], [0, -200]) }}
-        className="absolute top-0 left-0 w-full h-full bg-indigo-500/5 blur-[150px] pointer-events-none"
+        className="absolute top-0 left-0 w-full h-full bg-cyan-500/5 blur-[150px] pointer-events-none"
       />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -68,7 +68,7 @@ export default function Experience() {
           {/* Animated Timeline Line */}
           <motion.div
             style={{ scaleY, originY: 0 }}
-            className="absolute left-0 top-0 w-[2px] h-full bg-gradient-to-b from-indigo-500 via-violet-500 to-transparent"
+            className="absolute left-0 top-0 w-[2px] h-full bg-gradient-to-b from-cyan-500 via-blue-500 to-transparent"
           />
 
           {experiences.map((exp, idx) => (
@@ -81,19 +81,19 @@ export default function Experience() {
               className="relative pl-12 pb-12 last:pb-0"
             >
               {/* Dot with pulse animation */}
-              <div className="absolute left-[-5px] top-0 w-3 h-3 bg-indigo-600 rounded-full shadow-[0_0_15px_rgba(79,70,229,0.5)]">
-                <div className="absolute inset-0 bg-indigo-500 rounded-full animate-ping opacity-75" />
+              <div className="absolute left-[-5px] top-0 w-3 h-3 bg-cyan-500 rounded-full shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+                <div className="absolute inset-0 bg-cyan-400 rounded-full animate-ping opacity-75" />
               </div>
 
               <motion.div
                 whileHover={{ x: 10 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-indigo-500/30 transition-all shadow-lg hover:shadow-indigo-500/5 backdrop-blur-sm"
+                className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500/30 transition-all shadow-lg hover:shadow-cyan-500/5 backdrop-blur-sm"
               >
                 <div className="flex flex-wrap justify-between items-start gap-4 mb-6">
                   <div>
-                    <h3 className="text-2xl font-bold text-white group-hover:text-indigo-400 transition-colors">{exp.role}</h3>
-                    <p className="text-indigo-400 font-semibold">{exp.company}</p>
+                    <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">{exp.role}</h3>
+                    <p className="text-cyan-400 font-semibold">{exp.company}</p>
                   </div>
                   <div className="flex flex-col items-end gap-2 text-sm text-gray-400">
                     <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1 rounded-full border border-white/10">
@@ -107,7 +107,7 @@ export default function Experience() {
                 <ul className="space-y-4">
                   {exp.description.map((item, i) => (
                     <li key={i} className="flex gap-3 text-gray-400 text-sm leading-relaxed">
-                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-1.5 shrink-0" />
                       {item}
                     </li>
                   ))}

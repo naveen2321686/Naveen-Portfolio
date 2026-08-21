@@ -44,11 +44,11 @@ export default function Skills() {
       {/* Parallax Background Elements */}
       <motion.div
         style={{ y: y1, opacity }}
-        className="absolute top-20 right-[10%] w-64 h-64 bg-indigo-500/5 rounded-full blur-[100px]"
+        className="absolute top-20 right-[10%] w-64 h-64 bg-cyan-500/5 rounded-full blur-[100px]"
       />
       <motion.div
         style={{ y: y2, opacity }}
-        className="absolute bottom-20 left-[10%] w-64 h-64 bg-violet-500/5 rounded-full blur-[100px]"
+        className="absolute bottom-20 left-[10%] w-64 h-64 bg-blue-500/5 rounded-full blur-[100px]"
       />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -85,10 +85,10 @@ export default function Skills() {
                 ease: "easeOut"
               }}
               whileHover={{ y: -5 }}
-              className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-indigo-500/50 transition-all group"
+              className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-cyan-500/50 transition-all group shadow-xl hover:shadow-cyan-500/5"
             >
-              <div className="w-12 h-12 bg-indigo-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-500/10">
-                <category.icon className="text-indigo-500 group-hover:text-white transition-colors" size={24} />
+              <div className="w-12 h-12 bg-cyan-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-600 transition-all shadow-lg shadow-cyan-500/10">
+                <category.icon className="text-cyan-400 group-hover:text-white transition-colors" size={24} />
               </div>
               <h3 className="text-xl font-bold text-white mb-6">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
